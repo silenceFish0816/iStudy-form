@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app>
+    <meta charset="utf-8"> 
+
+	<link rel="stylesheet" type="text/css" href="css/acount_answer_main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="libs/angular.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="scripts/acount_answer.js"></script>
+  
+
+	
+<head>
+	<title>{{test.title}}</title>
+</head>
+
+    <body>
+    <nav class="navbar-default">
+    <div class="container-fluid">
+    	<div class="question-toolbar">
+    		<a class="font-toolbar" href="#">
+    			<span class="toolbar-img" id="img1"><img src="images/preview(32px).png">阅卷 </span>
+    		</a>
+            <a class="font-toolbar" href="#">
+                <span class="toolbar-img" id="img2"><img src="images/redo(32px).png">重做</span>
+            </a>
+            <a class="font-toolbar" href="#">
+                <span class="toolbar-img" id="img3"><img src="images/pre.png">上一题</span>
+            </a>
+             <a class="font-toolbar" href="#">
+                <span class="toolbar-img" id="img4">下一题<img src="images/next.png"></span>
+            </a>          
+        </div>
+
+
+        <div class="content-main">
+            <div class="hintOfQues">
+                <p>
+                    <span class="hint1">【{{本题未完成 | 本题已完成}}】</span>&nbsp;
+                    <span class="hint2" >当前第{{id}}题，共 {{id.total}} 题</span>
+                </p>
+            </div>
+            <div class="QuesOfBody">
+                <p class="number"><list>1.&nbsp;</list>蝴蝶花江湖救急</p>
+            </div>
+            <div class="ChooseToolbar">
+            <input type="radio" name="SingleChoice" class="SingleChoice" id="A">A<br>
+            <input type="radio" name="SingleChoice" class="SingleChoice" id="B">B<br>
+             <input type="radio" name="SingleChoice" class="SingleChoice" id="C">C<br>
+              <input type="radio" name="SingleChoice" class="SingleChoice" id="D">D
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    </body>
+</html>

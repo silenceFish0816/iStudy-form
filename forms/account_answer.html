@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="css/acount_answer.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="libs/angular.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="scripts/acount_answer.js"></script>
+
+
+	
+<head>
+	<title>{{test.title}}</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="header">
+			<div class="head-container">
+				<h1>{{test.title}}考试</h1>
+			</div>
+		</div><!--end header-->
+ 
+		  <div class="sidebar">
+
+            <ul class="nav" id="side-menu">
+                <li class="active" >
+                    <a href="#" class="title1"onclick="changePic(this)">
+                        <span class="nav-label ">判断题</span>
+                        <span class="fa arrow "><img src="images/node-closed.png"></spn>
+                     </a>
+                    <ul class="nav nav-second-level item1">
+                        <li><a href="#">第1题</a></li>
+                        <li><a href="#">第2题</a></li>
+                        <li><a href="#">第3题</a></li>
+                    </ul>               
+                </li>
+
+                 <li class="active" >
+                    <a href="#" class="title2"onclick="changePic(this)">
+                        <span class="nav-label">单选题</span>
+                        <span class="fa arrow "><img src="images/node-closed.png"></span>
+                     </a>
+                    <ul class="nav nav-second-level item2">
+                        <li><a href="#">第1题</a></li>
+                        <li><a href="#">第2题</a></li>
+                        <li><a href="#">第3题</a></li>
+                    </ul>               
+                </li>
+
+
+                <li class="active" >
+                    <a href="#"class="title3" onclick="changePic(this)">
+                        <span class="nav-label">填空题</span>
+                        <span class="fa arrow"><img src="images/node-closed.png"></span>
+                     </a>
+                    <ul class="nav nav-second-level item3">
+                        <li><a href="#">第1题</a></li>
+                        <li><a href="#">第2题</a></li>
+                        <li><a href="#">第3题</a></li>
+                    </ul>               
+                </li>
+               <li class="active" >
+                    <a href="#" class="title4"onclick="changePic(this)">
+                        <span class="nav-label">文档设计题</span>
+                        <span class="fa arrow"><img src="images/node-closed.png"></span>
+                     </a>
+                    <ul class="nav nav-second-level item4">
+                        <li><a href="#">第1题</a></li>
+                        <li><a href="#">第2题</a></li>
+                        <li><a href="#">第3题</a></li>
+                    </ul>               
+                </li>
+            </ul>
+	   </div><!--end content_left-->
+
+
+        <div class="content-main">
+
+            <div id="pdt" ng-show="navbar-default"class="mid-content" ng-include="'TrueOrFalse.html'"></div>
+            <div id="dxt" class="mid-content" ng-include="SingleChoice.html"></div>
+            <div id="tkt" class="mid-content" ng-include="Completion.html"></div>
+            <div id="wdsjt" class="mid-content" ng-include="DocumentDesign.html"></div>
+        </div><!--end content_main-->
+    
+
+
+
+			
+	
+		<div class="content-right">
+            <div class="user-info">
+                <img src="images/1.jpg">
+                <p><span class="user" id="userid">2015001001</span></p>
+                <p><span class="user" id="username">张三</span></p>
+            </div>
+            <div class="chooseQues">
+                <p class><span class="choose">选 题</span></p>
+            </div>
+
+             <div class="handPaper">
+                <p><span class="choose">交 卷</span></p>
+            </div>
+            
+
+            
+
+			<!--end content_right-->
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

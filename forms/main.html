@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="stuApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="libs/json.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="scripts/winformsdk.js"></script>
+    <script src="scripts/filters/core.filter.js"></script>
+    <script>
+        var stuApp = angular.module('stuApp', ['coreFilter']);
+        stuApp.controller('TestListController', function TestListController($scope, $http) {
+            var _this = $scope;
+            WSDK.loadTests(function (data) {
+                _this.tests = JSON.parse(data);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <h2 class="page-header">我的考试</h2>
+        <div class="test-list" ng-controller="TestListController">
+            <div class="row clearfix" ng-repeat="test in tests">
+                <div class="col-md-8 col-xs-12">
+                    <h4 class="name">
+                        {{test.title}}
+                    </h4>
+                    <p class="text-muted">
+                        <span class="pull-left">开始时间：{{test.datestart | formatDateTime}}</span>
+                        <span class="pull-left">截止时间：{{test.dateend | formatDate}}</span>
+                    </p>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    成绩：<span class="text-green">{{test.myscore || '暂无'}}</span>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <button class="btn btn-success" ng-click="goTest(test.id)">开始答题</button>
+                </div>
+            </div>
+            <h2 class="text-center text-muted" ng-show="tests.length == 0">暂无考试</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+html,body { 
+	height:100%; 
+	overflow:hidden;
+}
+body{
+margin: 0;
+padding: 0;
+}
+
+
+.navbar-default{
+	background: transparent;
+	width: 100%;
+	height: 100%;
+}
+
+.container-fluid{
+	background: transparent;
+	line-height: 50px;
+	overflow:hidden;
+	height: 100%;
+}
+
+.question-toolbar{
+	height: 6%;
+	background-color: transparent;
+	border-bottom: 1px solid #CCCCCC;
+	
+}
+.font-toolbar{
+	line-height: 50px;
+}
+
+
+.question-toolbar .toolbar-img >img{
+	margin-right: 10px;
+}
+
+
+.question-toolbar .font-toolbar {
+	font-family: '宋体';
+	font-size: 15pt;
+	text-decoration: none;
+}
+
+.question-toolbar .font-toolbar >span{
+	margin-left: 35px;
+}
+.question-toolbar .font-toolbar > #img4{
+	margin-left: 40px;
+}
+
+.question-toolbar .font-toolbar #img1 >img{
+	width: 17px;
+	height: 17px;
+	
+}
+.question-toolbar .font-toolbar #img2 >img{
+	margin-left: 10px;
+	width: 17px;
+	height: 17px;
+
+}
+.question-toolbar .font-toolbar #img3 >img{
+	margin-left: 30px;
+	width: 15px;
+	height: 15px;
+
+}
+
+.question-toolbar .font-toolbar #img4 >img{
+	margin-left: 15px;
+	width: 15px;
+	height: 15px;
+
+}
+
+.question-toolbar .font-toolbar #img1 {
+	color: #9DBF98;
+}
+.question-toolbar .font-toolbar #img2 {
+	color: #E02F00;
+}
+
+
+.content-main{
+	background: transparent;
+	width: 100%;
+	height: 90%;
+}
+
+.content-main .hintOfQues >p .hint1{
+	color: #E02F00;
+	font-family: '微软雅黑'
+}
+
+.content-main .hintOfQues >p .hint2{
+	font-size: 11pt;
+	font-family: '微软雅黑'
+}
+
+.content-main .hintOfQues >p .hint3{
+	color: #2F7D05;
+	font-size: 11pt;
+	font-family: '微软雅黑'
+}
+
+
+
+
+.content-main .QuesOfBody{
+	background: transparent;
+	width: 100%;
+	height: 65%;
+	overflow: auto;
+
+}
+
+.content-main .QuesOfBody >p{
+	font-size: 15pt;
+}
+
+.content-main .ChooseToolbar ,
+
+.CompletionToolbar{
+	background: transparent;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	font-size: 15pt;
+	border-top: 1px solid #CCCCCC;
+	overflow: auto;
+}
+.content-main .ChooseToolbar #false{
+	margin-left: 50px;
+
+}
+.content-main .CompletionToolbar .CompletionToolbar-main >input{
+	height: 25px;
+	border: 1px solid #CCCCCC;
+}
+
+
+.content-main .CompletionToolbar .saveToolbar{
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	background: #2F7D05;
+	color: #FFFFFF;
+}
+.content-main .CompletionToolbar .startAnswer {
+	margin-top: 20px;
+	width: 250px;
+	background: #2F7D05;
+	color: #ffffff;
+	text-align: center;
+}

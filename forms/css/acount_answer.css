@@ -1,0 +1,117 @@
+html,body { 
+	height:100%; 
+	overflow:hidden;
+}
+body{
+margin: 0;
+padding: 0;
+}
+
+.header{
+	height: 60px;
+	background: #444980;
+	padding: 0 10px 0 10px;
+}
+.head-container{
+	width: 100%; 
+	margin:auto;
+}
+.header h1{
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	color: #fffffa;
+	font-size: 31px;
+}
+
+.container-fluid{
+	height: 100%;
+	width: 100%
+}
+
+.sidebar{
+  background-color: transparent;
+  width: 9%;
+  height: 100%;
+  border-left: 1px solid #CCCCCC;
+  border-right: 0.1px solid #CCCCCC;
+  float: left;
+  overflow: auto;
+}
+
+.nav .arrow {
+  float: left;
+  line-height: 1.42857;
+}
+
+
+
+.sidebar .nav-second-level  li  a {
+  padding: 7px 10px 7px 10px;
+  padding-left: 52px;
+}
+
+.nav-second-level li:last-child {
+  margin-bottom: 10px;
+}
+.nav.nav-second-level > li.active {
+  border: none;
+}
+
+.sidebar .nav .fa >img{
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+.content-main{
+	float: left;
+	width: 80%;
+	height: 100%;
+	}
+
+
+
+.content-right{
+	float: right;
+	width: 11%;
+	height: 100%;
+	background: #F5F2F2;
+	text-align: center;
+	padding-top: 20px;
+}
+.content-right .user-info >img{
+	width: 150px;
+	height: 150px;
+}
+
+.content-right .user-info >p{
+	margin-top: 10px;
+	font-family: 'Arial';
+	color: #0044AA;
+	font-size: 15pt;
+}
+
+.chooseQues{
+	width: 100%;
+	height:40px;
+	background: #2F7D05;
+	margin-top: 400px;
+
+}
+.chooseQues >p,
+.handPaper >p{
+	text-align: center;
+	line-height: 40px;
+	font-size: 15pt;
+}
+.chooseQues .choose,
+.handPaper .choose{
+	color: #ffffff;
+}
+.handPaper{
+	width: 100%;
+	height: 40px;
+	background: #E02F00;
+	margin-top: 25px;
+}
